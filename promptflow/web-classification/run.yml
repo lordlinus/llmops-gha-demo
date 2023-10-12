@@ -3,12 +3,12 @@ flow: .
 data: data.jsonl
 
 # define cloud resource
-runtime: <runtime-name>
+runtime: runtime-02
 
 connections:
   classify_with_llm:
-    connection: Default_AzureOpenAI
-    deployment_name: gpt-35-turbo-0301
+    connection: apac-csu-aoai-eastus-2
+    deployment_name: gpt-4
   summarize_text_content:
-    connection: Default_AzureOpenAI
-    deployment_name: gpt-35-turbo-0301
+    connection: apac-csu-aoai-eastus-2
+    deployment_name: gpt-4
