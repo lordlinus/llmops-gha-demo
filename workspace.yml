@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/workspace.schema.json
+name: ssattiraju-aml-01
+location: eastus2
+display_name: Azure Machine Learning workspace for demo
+description: Azure Machine Learning workspace for demo of LLMops and Promptflow
+storage_account: /subscriptions/a195fdab-ef20-44e0-ae3a-48b2e1764e85/resourceGroups/dmzcsalvl0-dev-mgmt/providers/Microsoft.Storage/storageAccounts/ssattirajutrestg01
+container_registry: /subscriptions/a195fdab-ef20-44e0-ae3a-48b2e1764e85/resourceGroups/dmzcsalvl0-dev-mgmt/providers/Microsoft.ContainerRegistry/registries/ssattirajucr03
+key_vault: /subscriptions/a195fdab-ef20-44e0-ae3a-48b2e1764e85/resourceGroups/dlzlvl1-dev-logging/providers/Microsoft.Keyvault/vaults/dlzlvl1-dev-vault003
+application_insights: /subscriptions/a195fdab-ef20-44e0-ae3a-48b2e1764e85/resourceGroups/dlzlv1-dev-aml/providers/Microsoft.insights/components/ssattirajuaml05347225649
+tags:
+  purpose: demo

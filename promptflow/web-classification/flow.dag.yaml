@@ -23,14 +23,12 @@ nodes:
     type: code
     path: summarize_text_content.jinja2
   inputs:
-    deployment_name: gpt-35-turbo-0301
+    deployment_name: gpt-35-turbo
     max_tokens: 128
     temperature: 0.2
     text: ${fetch_text_content_from_url.output}
-  provider: AzureOpenAI
-  connection: Default_AzureOpenAI
+  connection: apac-csu-aoai-eastus-2
   api: chat
-  module: promptflow.tools.aoai
 - name: prepare_examples
   type: python
   source:
@@ -43,14 +41,13 @@ nodes:
     type: code
     path: classify_with_llm.jinja2
   inputs:
-    deployment_name: gpt-35-turbo-0301
+    deployment_name: gpt-35-turbo
     max_tokens: 128
     temperature: 0.2
     url: ${inputs.url}
     text_content: ${summarize_text_content.output}
     examples: ${prepare_examples.output}
-  provider: AzureOpenAI
-  connection: Default_AzureOpenAI
+  connection: apac-csu-aoai-eastus-2
   api: chat
 - name: convert_to_dict
   type: python
