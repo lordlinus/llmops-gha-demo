@@ -1,4 +1,4 @@
-promptflow[azure]
+promptflow
 promptflow-tools
 bs4
 promptflow-vectordb
